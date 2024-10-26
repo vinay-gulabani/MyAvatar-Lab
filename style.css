@@ -1,0 +1,82 @@
+body {
+  background-image: url('bg.png');
+  background-size: cover;
+}
+
+h1 {
+  text-align: center;
+  font-family: 'Abril Fatface', cursive;
+  font-weight: normal;
+  color: #e8354f;
+}
+
+h3{ 
+  text-indent: 30px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: normal;
+}
+
+.container {
+  max-width: 700px;
+  margin: auto;
+  background-color: white;
+  padding: 10px;
+}
+
+.options img {
+  background-color: #f8c8ac;
+  padding: 10px;
+  cursor: pointer;
+  border-radius: 10px;
+  width: 80px;
+  height: auto;
+}
+
+.avatar {
+  position: sticky;
+  top: 10px;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+  background-color: white;
+  border-radius: 50%;
+  padding: 30px;
+  border: 1px dashed #333;
+}
+
+.avatar > img {
+  position: absolute;
+}
+
+#avatarEyes {
+  top: 110px;
+  left: 66px;
+}
+
+#avatarMouth {
+  top: 200px;
+  left: 92px;
+  width: 70px;
+  height: auto;
+}
+
+#avatarHair {
+  top: 0px;
+  width: 220px;
+  left: 23px;
+}
+
+#avatarNose {
+  top: 150px;
+  left: 115px;
+}
+
+#avatarFace {
+  bottom: 0px;
+}
+#avatarSpecs {
+  
+    width: 150px;
+    top: 120px;
+    left: 50px;
+}
