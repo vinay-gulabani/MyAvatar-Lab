@@ -1,0 +1,121 @@
+<html>
+  <head>
+    <title>Avatars</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <link
+      href="https://fonts.googleapis.com/css?family=Abril+Fatface|Open+Sans&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Create your avatar</h1>
+
+      <div class="avatar">
+        <img id="avatarFace" src="face1.png" />
+        <img id="avatarEyes" src="eye1.png" />
+        <img id="avatarMouth" src="mouth3.png" />
+        <img id="avatarHair" src="hair2.png" />
+        <img id="avatarNose" src="nose.png" />
+        <img id="avatarSpecs" src="specs1.png" />
+      </div>
+
+      <div class="options">
+        <h3>Eyes</h3>
+        <input type="radio" id="eye1" name="eye" value="eye1.png" checked="" />
+        <label for="eye1"><img src="eye1.png" /></label>
+
+        <input type="radio" id="eye2" name="eye" value="eye2.png" />
+        <label for="eye2"><img src="eye2.png" /></label>
+
+        <input type="radio" id="eye3" name="eye" value="eye3.png" />
+        <label for="eye3"><img src="eye3.png" /></label>
+
+        <input type="radio" id="eye4" name="eye" value="eye4.png" />
+        <label for="eye4"><img src="eye4.png" /></label>
+
+        <input type="radio" id="eye5" name="eye" value="eye5.png" />
+        <label for="eye5"><img src="eye5.png" /></label>
+
+        <h3>Mouth</h3>
+
+        <input type="radio" id="mouth1" name="mouth" value="mouth1.png" />
+        <label for="mouth1"><img src="mouth1.png" /></label>
+
+        <input type="radio" id="mouth2" name="mouth" value="mouth2.png" />
+        <label for="mouth2"><img src="mouth2.png" /></label>
+
+        <input type="radio" id="mouth3" name="mouth" value="mouth3.png" />
+        <label for="mouth3"><img src="mouth3.png" /></label>
+
+        <input
+          type="radio"
+          id="mouth4"
+          name="mouth"
+          value="mouth4.png"
+          checked=""
+        />
+        <label for="mouth4"><img src="mouth4.png" /></label>
+
+        <input type="radio" id="mouth5" name="mouth" value="mouth5.png" />
+        <label for="mouth5"><img src="mouth5.png" /></label>
+
+        <h3>Hairs</h3>
+
+        <input type="radio" id="hair1" name="hair" value="hair1.png" />
+        <label for="hair1"><img src="hair1.png" /></label>
+
+        <input
+          type="radio"
+          id="hair2"
+          name="hair"
+          value="hair2.png"
+          checked=""
+        />
+        <label for="hair2"><img src="hair2.png" /></label>
+
+        <input type="radio" id="hair3" name="hair" value="hair3.png" />
+        <label for="hair3"><img src="hair3.png" /></label>
+
+        <h3>Specs</h3>
+
+        <input
+          type="radio"
+          id="specs1"
+          name="specs"
+          value="specs1.png"
+          checked=""
+        />
+        <label for="specs1"><img src="specs1.png" /></label>
+
+        <input type="radio" id="specs2" name="specs" value="specs2.png" />
+        <label for="specs2"><img src="specs2.png" /></label>
+
+        <input type="radio" id="specs3" name="specs" value="specs3.png" />
+        <label for="specs3"><img src="specs3.png" /></label>
+
+        <input type="radio" id="specs4" name="specs" value="specs4.png" />
+        <label for="specs4"><img src="specs4.png" /></label>
+      </div>
+    </div>
+
+    <script>
+      function update() {
+        var eyes = $('input[name="eye"]:checked').val();
+        var mouth = $('input[name="mouth"]:checked').val();
+        var hair = $('input[name="hair"]:checked').val();
+        var specs = $('input[name="specs"]:checked').val();
+
+        $("#avatarEyes").attr("src", eyes);
+        $("#avatarMouth").attr("src", mouth);
+        $("#avatarHair").attr("src", hair);
+        $("#avatarSpecs").attr("src", specs);
+      }
+      $(".options").click(update);
+    </script>
+
+    <script type="application/javascript" src="/share.js"></script>
+  </body>
+</html>
